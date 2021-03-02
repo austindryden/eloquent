@@ -5,3 +5,5 @@ function countBs(word){
     }
     return count;
 }
+
+console.log(countBs("BoBoBoB"));
