@@ -5,4 +5,4 @@ function isEven(x){
     return (isEven(x-2));
 }
 
-console.log(isEven(11));
+console.log(isEven(-50));
