@@ -1,3 +1,4 @@
+//recursive check for even or odd
 function isEven(x){
     if (x < 0 ) return isEven(x*-1);
     if (x == 0) return true;
