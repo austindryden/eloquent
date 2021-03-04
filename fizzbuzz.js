@@ -1,3 +1,4 @@
+//fizzbuzz classic
 const fizz = 3;
 const buzz = 5;
 for (let i =0; i < 100; i++){
