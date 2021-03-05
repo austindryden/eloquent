@@ -1,7 +1,20 @@
-function range(x,y,step = 1){
+function range(x, y, step = 1){
     let ranger = [];
-    if (y < x) step = 0 - Math.abs(step);
-    for (let i = x; i == y; i+= (step)) ranger.push(i);
+    if (y < x){
+        for (let i = x; i >= y; i -= Math.abs(step)){
+            ranger.push(i);
+        }
+        return ranger;
+    }
+    for (let i = x; i <= y; i += Math.abs(step)){
+        ranger.push(i);
+    }
     return ranger;
 }
-console.log(range(8,2));
+
+function sum(ranger){
+    let sum = 0;
+    for (let num of ranger) sum += num;
+    return sum;
+}
+console.log(sum(range(1, 10)));
