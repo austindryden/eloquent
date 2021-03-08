@@ -5,4 +5,22 @@ function arrayToList(arr){
     return list;
 }
 
-console.log(arrayToList([1,2,3]));
+function listToArray(list){
+    let arr = [];
+    for (let note = list; node; node = node.rest){
+        arr.push(node.value);
+    }
+    return arr;
+}
+
+function prepend (value, list){
+    return {value, rest: list};
+}
+
+function nth (list, n){
+    if (!list) return undefined;
+    if (n ==0) return list.value;
+    return nth(list.rest, n-1);
+}
+
+console.log(arrayToList([1,2,3]));  
