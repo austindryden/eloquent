@@ -1,3 +1,4 @@
+//creates an array ranged from x to y by step
 function range(x, y, step = 1){
     let ranger = [];
     if (y < x){
