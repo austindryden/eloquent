@@ -1,11 +1,7 @@
 //converts an array to a list
 function arrayToList(arr){
-    let list = {};
-    for (let num of arr){   
-        list.value = num;
-        list.rest = {};
-
-    }
+    let list = null;
+    for (let i = arr.length -1 ; i >=0 ; i--) list = {value: arr[i], rest: list};
     return list;
 }
 
