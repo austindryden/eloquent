@@ -19,3 +19,20 @@ function sum(ranger){
     return sum;
 }
 console.log(sum(range(1, 10)));
+
+
+function deepEqual(a, b){
+    if (a === b) return true;
+    if(a == null || b == null) return false;
+    if (typeof(a)  == "object" && typeof(b) == "object"){
+        let akeys = Object.keys(a);
+        let bkeys = Object.keys(b);
+        console.log(akeys);
+        console.log(bkeys);
+    }
+    
+    return false;
+}
+let objA = {thingyA: "yes"};
+let objB = {thingyB: "yes"};
+console.log(deepEqual(objA,objB));
