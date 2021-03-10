@@ -19,4 +19,3 @@ function sum(ranger){
     return sum;
 }
 console.log(sum(range(1, 10)));
-
