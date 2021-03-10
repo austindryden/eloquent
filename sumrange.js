@@ -29,10 +29,17 @@ function deepEqual(a, b){
         let bkeys = Object.keys(b);
         console.log(akeys);
         console.log(bkeys);
+
+        if (akeys.length != bkeys.length) return false;
+        for (let key of akeys){
+                
+                if (a[key] != b[key]) return false;
+        }
+        return true;
     }
     
     return false;
 }
-let objA = {thingyA: "yes"};
-let objB = {thingyB: "yes"};
+let objA = {thingyB: "yes", More : "Things"};
+let objB = {thingyB: "yes", More : "Things"};
 console.log(deepEqual(objA,objB));
