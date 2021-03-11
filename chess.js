@@ -1,3 +1,4 @@
+//prints a chess board of size
 let size = 8;
 for (let i = 0; i< size; i++){
     let display = "";
