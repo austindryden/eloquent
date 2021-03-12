@@ -13,6 +13,7 @@ function range(x, y, step = 1){
     return ranger;
 }
 
+//sums the numbers in an array
 function sum(ranger){
     let sum = 0;
     for (let num of ranger) sum += num;
