@@ -1,4 +1,4 @@
-//prints a chess board of size, as defined by the variable size
+//prints a chess board of given size
 function chess(size){
     for (let i = 0; i< size; i++){
         let display = "";
