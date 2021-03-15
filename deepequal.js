@@ -15,6 +15,7 @@ function deepEqual(a, b){
         }
         return true;    
 }
+
 let objA = {thingyB: "yes", More : "Things"};
 let objB = {thingyB: "yes", More : "Things"};
 console.log(deepEqual(objA,objB));
