@@ -12,3 +12,5 @@ function min2(x,y){
 console.log(min(2,3));
 console.log(min(40,70));
 
+console.log(min2(2,3));
+console.log(min2(40,70));
