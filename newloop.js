@@ -1,1 +1,1 @@
-//Chapter five exercise
+//rebuild the for loop using higher-order functions.
