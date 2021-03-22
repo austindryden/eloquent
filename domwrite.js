@@ -48,12 +48,12 @@ function repeat(n, action) {
 
   function dominantDirection(word){
     let langArr = textScripts(word);
-    console.log(langArr);
+    //console.log(langArr);
     let wordLang = langArr.reduce((a,b) => a.percent < b.percent ? b : a);
-    console.log(wordLang);
+    //console.log(wordLang);
     let langHold = wordLang.lang;
     let lang = SCRIPTS.reduce((a, b) => a.name == langHold ? a : b);
-    console.log(lang);
+    //console.log(lang);
     return lang.direction;
   }
 
