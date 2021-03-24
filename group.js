@@ -1,34 +1,41 @@
 class Group{
     constructor(){
-        this = [];
+        this.members = [];
     }
 
     add(item){
         if (this.has(item)) return false;
-        this.push(item);
+        this.members.push(item);
         return true;
     }
 
     delete(item){
-        if (!this.has(item)) return false;
-        for (let i = 0; i < this.length; i++){
-            if (i == item){
-                this.splice(i,1);
-            }
-        }
+        this.members = this.members.filter(x => x !== item);
         
     }
 
     has(item){
-        for (let i of this){
-            if (i == item) return true;
+        for (let i of this.members){
+            if (i === item) return true;
         }
         return false;
     }
 
-    from(arr){
+    static from(arr){
+        let group = new Group;
         for (let i of arr){
             this.add(i);
         }
+        return group;
     }
 }
+
+let group = Group.from([10, 20]);
+console.log(group.has(10));
+// → true
+console.log(group.has(30));
+// → false
+group.add(10);
+group.delete(10);
+console.log(group.has(10));
+// → false
