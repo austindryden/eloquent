@@ -24,7 +24,7 @@ class Group{
     static from(arr){
         let group = new Group;
         for (let i of arr){
-            this.add(i);
+            group.add(i);
         }
         return group;
     }
