@@ -32,7 +32,6 @@ class Group{
     [Symbol.iterator](){
         return new GroupIterator(this);
     }
-    
 }
 
 class GroupIterator{
