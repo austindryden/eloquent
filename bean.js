@@ -12,7 +12,7 @@ function countChar(word, letter){
     return count;
 }
 
-
+//TESTING
 console.log(countBs("BoBoBoB"));
 
 console.log(countChar("count the letter h in this sentence", "h"));
