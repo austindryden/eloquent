@@ -25,4 +25,5 @@ function nth (list, n){
     return nth(list.rest, n-1);
 }
 
+//Testing
 console.log(arrayToList([1,2,3]));  
